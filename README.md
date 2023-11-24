@@ -1,5 +1,5 @@
 # multithreading
-Includes all of Baptiste Ramonda's SRI 3A multithreading tutorials at UPSSITECH.
+This repository includes all of Baptiste Ramonda's SRI 3A multithreading tutorials at UPSSITECH.
 
 ## Objective
 
