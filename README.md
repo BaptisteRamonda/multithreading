@@ -1,7 +1,7 @@
 # multithreading
 Includes all of Baptiste Ramonda's SRI 3A multithreading tutorials at UPSSITECH.
 
-# Usage
+## Usage
 
 To run the project correctly, execute the three commands below in three different terminals (in that order) :
 
