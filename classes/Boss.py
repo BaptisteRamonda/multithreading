@@ -1,5 +1,5 @@
 import time
-from Task import Task
+from classes.Task import Task
 from QueueManager import QueueClient
 
 
