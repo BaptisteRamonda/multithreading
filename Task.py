@@ -3,13 +3,18 @@ import numpy as np
 
 
 class Task:
+    # Attributes
+    identifier: int
+    size: int
+    a: float
+    b: float
+    x = []
+    time: float
 
     def __init__(self, identifier, size=None):
         self.identifier = identifier
         # choose the size of the problem
-        self.size = size or np.random.randint(
-            300, 3_000
-        )
+        self.size = size or np.random.randint(300, 3000)
         # Generate the input of the problem
         self.a = np.random.rand(self.size, self.size)
         self.b = np.random.rand(self.size)
