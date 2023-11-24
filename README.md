@@ -30,13 +30,13 @@ Before trying to launch the project, make sure you have installed the appropriat
 To run the project correctly, execute the three commands below in three different terminals (in that order) :
 
 ```bash
- python .\QueueManager.py
+ python .\classes\QueueManager.py
 ```
 
 ```bash
- python .\Boss.py
+ python .\classes\Boss.py
 ```
 
 ```bash
- python .\Minion.py
+ python .\classes\Minion.py
 ```
