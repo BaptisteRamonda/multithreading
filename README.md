@@ -44,3 +44,12 @@ To run the project correctly, execute the three commands below in three differen
 ```bash
  python .\classes\Minion.py
 ```
+
+## Unit tests
+
+In the test folder you will find unit tests testing the different classes of the project. To run these tests, execute the command below, replacing with the name of the corresponding test :
+
+```bash
+ python .\tests\test_name.py
+```
+
