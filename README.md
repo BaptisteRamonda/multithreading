@@ -9,6 +9,14 @@ The aim of this project is to set up an architecture to demonstrate multithreadi
 
 Before trying to launch the project, make sure you have installed the appropriate dependencies (run the lines below to install them) :
 
+```bash
+ pip install numpy
+```
+
+```bash
+ pip install multiprocessing
+```
+
 
 ## Usage
 
