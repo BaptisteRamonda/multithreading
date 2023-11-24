@@ -7,9 +7,9 @@ The aim of this project is to set up an architecture to demonstrate multithreadi
 
 ## References
 
-![Git setup](https://homepages.laas.fr/gsaurel/teach/2023-2024/3A_SRI/b-tp-2.pdf)
+[Git setup](https://homepages.laas.fr/gsaurel/teach/2023-2024/3A_SRI/b-tp-2.pdf)
 
-![Tutorial subject](https://homepages.laas.fr/gsaurel/teach/2023-2024/3A_SRI/b-tp-2.pdf)
+[Tutorial subject](https://homepages.laas.fr/gsaurel/teach/2023-2024/3A_SRI/b-tp-2.pdf)
 
 
 ## Installation
