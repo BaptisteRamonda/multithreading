@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
             # Adding the specified number of tasks to the queue
             for i in range(task_count):
-                boss.add_task(i, 6000)
+                boss.add_task(i, 500)
 
         # Handling the case where the user enters a non-integer value
         except ValueError:
