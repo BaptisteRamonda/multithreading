@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/CMakeFiles/zlib-populate"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/CMakeFiles/zlib-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/CMakeFiles/zlib-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/zlib-subbuild/zlib-populate-prefix/src/zlib-populate-stamp/zlib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"zlib-populate"
+		],
+		"name" : "zlib-populate"
+	}
+}

@@ -1,0 +1,3 @@
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/CMakeFiles/rebuild_cache.dir
