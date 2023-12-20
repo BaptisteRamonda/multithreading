@@ -2,7 +2,7 @@
 
 int main() {
     // Affiche un message simple
-    std::cout << "Bonjour, ceci est un programme C++ basique." << std::endl;
+    std::cout << "Hello world." << std::endl;
 
     // Retourne 0 pour indiquer une exécution réussie
     return 0;

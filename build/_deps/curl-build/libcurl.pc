@@ -27,13 +27,13 @@ prefix=C:/Program Files (x86)/low_level
 exec_prefix=${prefix}
 libdir=C:/Program Files (x86)/low_level/lib
 includedir=${prefix}/include
-supported_protocols="HTTP SCP SFTP"
-supported_features="IPv6 unixsockets libz AsynchDNS Largefile alt-svc HSTS NTLM"
+supported_protocols="HTTP"
+supported_features="IPv6 unixsockets AsynchDNS Largefile alt-svc HSTS NTLM"
 
 Name: libcurl
 URL: https://curl.se/
 Description: Library to transfer files with ftp, http, etc.
 Version: 7.80.0
 Libs: -L${libdir} -lcurl 
-Libs.private:  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 C:/Users/Baptiste Ramonda/anaconda3/Library/lib/z.lib C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib -ladvapi32 -lcrypt32
+Libs.private:  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 -ladvapi32 -lcrypt32
 Cflags: -I${includedir} 

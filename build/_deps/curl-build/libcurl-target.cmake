@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -51,7 +51,7 @@ add_library(CURL::libcurl SHARED IMPORTED)
 
 set_target_properties(CURL::libcurl PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src/include"
-  INTERFACE_LINK_LIBRARIES "winmm;ws2_32;ZLIB::ZLIB;C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib;advapi32;crypt32"
+  INTERFACE_LINK_LIBRARIES "winmm;ws2_32;advapi32;crypt32"
 )
 
 # Import target "CURL::libcurl" for configuration "Release"

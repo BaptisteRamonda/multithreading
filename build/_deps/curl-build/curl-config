@@ -84,13 +84,13 @@ while test $# -gt 0; do
         ;;
 
     --feature|--features)
-        for feature in IPv6 unixsockets libz AsynchDNS Largefile alt-svc HSTS NTLM ""; do
+        for feature in IPv6 unixsockets AsynchDNS Largefile alt-svc HSTS NTLM ""; do
             test -n "$feature" && echo "$feature"
         done
         ;;
 
     --protocols)
-        for protocol in HTTP SCP SFTP; do
+        for protocol in HTTP; do
             echo "$protocol"
         done
         ;;
@@ -161,7 +161,7 @@ while test $# -gt 0; do
            CURLLIBDIR=""
         fi
         if test "Xyes" = "Xno"; then
-          echo ${CURLLIBDIR}-lcurl  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 C:/Users/Baptiste Ramonda/anaconda3/Library/lib/z.lib C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib -ladvapi32 -lcrypt32
+          echo ${CURLLIBDIR}-lcurl  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 -ladvapi32 -lcrypt32
         else
           echo ${CURLLIBDIR}-lcurl
         fi
@@ -172,7 +172,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xno" != "Xno" ; then
-          echo C:/Program Files (x86)/low_level/lib/libcurl.a   -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 C:/Users/Baptiste Ramonda/anaconda3/Library/lib/z.lib C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib -ladvapi32 -lcrypt32
+          echo C:/Program Files (x86)/low_level/lib/libcurl.a   -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 -ladvapi32 -lcrypt32
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1

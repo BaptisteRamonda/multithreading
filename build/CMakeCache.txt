@@ -173,7 +173,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/msys64/mingw64/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Users/BAPTIS~1/ANACON~1/Library/bin/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Users/BAPTIS~1/ANACON~1/Scripts/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -693,10 +693,10 @@ JSON_SystemInclude:BOOL=OFF
 LIBCURL_OUTPUT_NAME:STRING=libcurl
 
 //Path to a file.
-LIBSSH2_INCLUDE_DIR:PATH=C:/Users/Baptiste Ramonda/anaconda3/Library/include
+LIBSSH2_INCLUDE_DIR:PATH=LIBSSH2_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-LIBSSH2_LIBRARY:FILEPATH=C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib
+LIBSSH2_LIBRARY:FILEPATH=LIBSSH2_LIBRARY-NOTFOUND
 
 //Installation directory for libraries
 LIB_INSTALL_DIR:PATH=C:/Program Files (x86)/low_level/lib
@@ -784,13 +784,13 @@ WITH_UNALIGNED:BOOL=ON
 ZLIB_DUAL_LINK:BOOL=OFF
 
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=C:/Users/Baptiste Ramonda/anaconda3/Library/include
+ZLIB_INCLUDE_DIR:PATH=ZLIB_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-ZLIB_LIBRARY_RELEASE:FILEPATH=C:/Users/Baptiste Ramonda/anaconda3/Library/lib/z.lib
+ZLIB_LIBRARY_RELEASE:FILEPATH=ZLIB_LIBRARY_RELEASE-NOTFOUND
 
 //Value Computed by CMake
 cpr_BINARY_DIR:STATIC=C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/cpr-build
@@ -852,9 +852,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=c:/Users/Baptiste Ramonda/Documents/GitHub/multithr
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=27
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=9
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/bin/cmake.exe
 //Path to cpack program executable.
@@ -1004,7 +1004,7 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.27
+CMAKE_ROOT:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/share/cmake-3.28
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -1117,23 +1117,19 @@ CURL_ZLIB-STRINGS:INTERNAL=AUTO;ON;OFF
 CYGWIN_BAT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ENABLE_IPV6
 ENABLE_IPV6-ADVANCED:INTERNAL=1
-//Details about finding LibSSH2
-FIND_PACKAGE_MESSAGE_DETAILS_LibSSH2:INTERNAL=[C:/Users/Baptiste Ramonda/anaconda3/Library/lib/libssh2.lib][C:/Users/Baptiste Ramonda/anaconda3/Library/include][v1.10.0()]
 //Details about finding Perl
 FIND_PACKAGE_MESSAGE_DETAILS_Perl:INTERNAL=[C:/msys64/usr/bin/perl.exe][v5.36.0()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding ZLIB
-FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[C:/Users/Baptiste Ramonda/anaconda3/Library/lib/z.lib][C:/Users/Baptiste Ramonda/anaconda3/Library/include][c ][v1.2.13()]
 //Test FNO_LTO_AVAILABLE
 FNO_LTO_AVAILABLE:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have symbol alarm
 HAVE_ALARM:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;arpa/tftp.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;arpa/tftp.h
 HAVE_ARPA_TFTP_H:INTERNAL=
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h
 HAVE_ASSERT_H:INTERNAL=1
 //Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN
 HAVE_ATTRIBUTE_VISIBILITY_HIDDEN:INTERNAL=
@@ -1153,7 +1149,7 @@ HAVE_BUILTIN_CTZ:INTERNAL=1
 HAVE_BUILTIN_CTZLL:INTERNAL=1
 //Curl test 
 HAVE_CLOCK_GETTIME_MONOTONIC:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h
 HAVE_ERRNO_H:INTERNAL=1
 //Have symbol fcntl
 HAVE_FCNTL:INTERNAL=
@@ -1185,9 +1181,9 @@ HAVE_GETRLIMIT:INTERNAL=
 HAVE_GETSOCKNAME:INTERNAL=1
 //Curl test 
 HAVE_GLIBC_STRERROR_R:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;idn2.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;idn2.h
 HAVE_IDN2_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;ifaddrs.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;ifaddrs.h
 HAVE_IFADDRS_H:INTERNAL=
 //Have symbol if_nametoindex
 HAVE_IF_NAMETOINDEX:INTERNAL=
@@ -1207,9 +1203,9 @@ HAVE_IOCTLSOCKET_FIONBIO:INTERNAL=1
 HAVE_IOCTL_FIONBIO:INTERNAL=
 //Curl test 
 HAVE_IOCTL_SIOCGIFADDR:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;krb.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;krb.h
 HAVE_KRB_H:INTERNAL=
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h
 HAVE_LIBGEN_H:INTERNAL=1
 //Have library winmm;ws2_32
 HAVE_LIBWINMM:INTERNAL=1
@@ -1217,13 +1213,13 @@ HAVE_LIBWINMM:INTERNAL=1
 HAVE_LIBWS2_32:INTERNAL=1
 //Have include linux/tcp.h
 HAVE_LINUX_TCP_H:INTERNAL=
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h
 HAVE_LOCALE_H:INTERNAL=1
 //Have function mach_absolute_time
 HAVE_MACH_ABSOLUTE_TIME:INTERNAL=
 //Test HAVE_MSG_NOSIGNAL
 HAVE_MSG_NOSIGNAL:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;netinet/tcp.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;netinet/tcp.h
 HAVE_NETINET_TCP_H:INTERNAL=
 //Test HAVE_NO_INTERPOSITION
 HAVE_NO_INTERPOSITION:INTERNAL=1
@@ -1231,7 +1227,7 @@ HAVE_NO_INTERPOSITION:INTERNAL=1
 HAVE_OFF64_T:INTERNAL=TRUE
 //Test HAVE_PCLMULQDQ_INTRIN
 HAVE_PCLMULQDQ_INTRIN:INTERNAL=1
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;pem.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;pem.h
 HAVE_PEM_H:INTERNAL=
 //Have symbol pipe
 HAVE_PIPE:INTERNAL=
@@ -1239,7 +1235,7 @@ HAVE_PIPE:INTERNAL=
 HAVE_POLL_FINE:INTERNAL=
 //Result of TRY_COMPILE
 HAVE_POLL_FINE_COMPILED:INTERNAL=FALSE
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;poll.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;poll.h
 HAVE_POLL_H:INTERNAL=
 //Have function posix_memalign
 HAVE_POSIX_MEMALIGN:INTERNAL=
@@ -1295,17 +1291,17 @@ HAVE_SSE42CMPSTR_INTRIN:INTERNAL=1
 HAVE_SSE42CRC_INLINE_ASM:INTERNAL=1
 //Test HAVE_SSE42CRC_INTRIN
 HAVE_SSE42CRC_INTRIN:INTERNAL=1
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;ssl.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;ssl.h
 HAVE_SSL_H:INTERNAL=
 //Test HAVE_SSSE3_INTRIN
 HAVE_SSSE3_INTRIN:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h
 HAVE_STDBOOL_H:INTERNAL=1
 //Have include stddef.h
 HAVE_STDDEF_H:INTERNAL=1
 //Have include stdint.h
 HAVE_STDINT_H:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h
 HAVE_STDIO_H:INTERNAL=1
 //Have function strerror
 HAVE_STRERROR:INTERNAL=1
@@ -1313,29 +1309,29 @@ HAVE_STRERROR:INTERNAL=1
 HAVE_STRERROR_R:INTERNAL=
 //Have symbol strncmpi
 HAVE_STRNCMPI:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;stropts.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;stropts.h
 HAVE_STROPTS_H:INTERNAL=
 //Have symbol strtoll
 HAVE_STRTOLL:INTERNAL=1
 //Test HAVE_STRUCT_TIMEVAL
 HAVE_STRUCT_TIMEVAL:INTERNAL=1
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/filio.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/filio.h
 HAVE_SYS_FILIO_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/ioctl.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/ioctl.h
 HAVE_SYS_IOCTL_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/resource.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/resource.h
 HAVE_SYS_RESOURCE_H:INTERNAL=
 //Have include sys/sdt.h
 HAVE_SYS_SDT_H:INTERNAL=
 //Have include sys/types.h
 HAVE_SYS_TYPES_H:INTERNAL=1
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/uio.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/uio.h
 HAVE_SYS_UIO_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/un.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/un.h
 HAVE_SYS_UN_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h;malloc.h;memory.h;sys/utsname.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h;malloc.h;memory.h;sys/utsname.h
 HAVE_SYS_UTSNAME_H:INTERNAL=
-//Have includes C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;sys/xattr.h
+//Have includes windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;sys/xattr.h
 HAVE_SYS_XATTR_H:INTERNAL=
 //Have include unistd.h
 HAVE_UNISTD_H:INTERNAL=1
@@ -1347,13 +1343,13 @@ HAVE_UTIMES:INTERNAL=
 HAVE_VARIADIC_MACROS_C99:INTERNAL=1
 //Curl test 
 HAVE_VARIADIC_MACROS_GCC:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h;wincrypt.h
+//Have include windows.h;ws2tcpip.h;winsock2.h;wincrypt.h
 HAVE_WINCRYPT_H:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h
+//Have include ;windows.h
 HAVE_WINDOWS_H:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h;winsock2.h
+//Have include windows.h;ws2tcpip.h;winsock2.h
 HAVE_WINSOCK2_H:INTERNAL=1
-//Have include C:/Users/Baptiste Ramonda/anaconda3/Library/include/libssh2.h;windows.h;ws2tcpip.h
+//Have include windows.h;ws2tcpip.h
 HAVE_WS2TCPIP_H:INTERNAL=1
 //Have symbol _strtoi64
 HAVE__STRTOI64:INTERNAL=1

@@ -384,16 +384,16 @@
 /* #undef HAVE_LIBSOCKET */
 
 /* Define to 1 if you have the `ssh2' library (-lssh2). */
-#define HAVE_LIBSSH2 1
+/* #undef HAVE_LIBSSH2 */
 
 /* Define to 1 if you have the <libssh2.h> header file. */
-#define HAVE_LIBSSH2_H 1
+/* #undef HAVE_LIBSSH2_H */
 
 /* Define to 1 if you have the <libssh/libssh.h> header file. */
 /* #undef HAVE_LIBSSH_LIBSSH_H */
 
 /* if zlib is available */
-#define HAVE_LIBZ 1
+/* #undef HAVE_LIBZ */
 
 /* if brotli is available */
 /* #undef HAVE_BROTLI */
@@ -726,7 +726,7 @@
 #define HAVE_PROCESS_H 1
 
 /* if you have the zlib.h header file */
-#define HAVE_ZLIB_H 1
+/* #undef HAVE_ZLIB_H */
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */
@@ -913,7 +913,7 @@
 /* #undef USE_LIBSSH */
 
 /* if libSSH2 is in use */
-#define USE_LIBSSH2 1
+/* #undef USE_LIBSSH2 */
 
 /* If you want to build curl with the built-in manual */
 /* #undef USE_MANUAL */
