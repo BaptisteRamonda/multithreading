@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz" ABSOLUTE)
+get_filename_component(filename "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz" ABSOLUTE)
 get_filename_component(directory "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src" ABSOLUTE)
 
 message(STATUS "extracting...

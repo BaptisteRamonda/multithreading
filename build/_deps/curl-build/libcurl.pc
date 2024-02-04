@@ -5,7 +5,7 @@
 #                            | (__| |_| |  _ <| |___
 #                             \___|\___/|_| \_\_____|
 #
-# Copyright (C) 1998 - 2020, Daniel Stenberg, <daniel@haxx.se>, et al.
+# Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 #
 # This software is licensed as described in the file COPYING, which
 # you should have received as part of this distribution. The terms
@@ -18,6 +18,8 @@
 # This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
 # KIND, either express or implied.
 #
+# SPDX-License-Identifier: curl
+#
 ###########################################################################
 
 # This should most probably benefit from getting a "Requires:" field added
@@ -28,12 +30,12 @@ exec_prefix=${prefix}
 libdir=C:/Program Files (x86)/low_level/lib
 includedir=${prefix}/include
 supported_protocols="HTTP"
-supported_features="IPv6 unixsockets AsynchDNS Largefile alt-svc HSTS NTLM"
+supported_features="IPv6 unixsockets AsynchDNS Largefile alt-svc HSTS NTLM threadsafe"
 
 Name: libcurl
 URL: https://curl.se/
 Description: Library to transfer files with ftp, http, etc.
-Version: 7.80.0
+Version: 8.4.0
 Libs: -L${libdir} -lcurl 
-Libs.private:  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lwinmm -lws2_32 -ladvapi32 -lcrypt32
+Libs.private:  -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lkernel32 -lws2_32 -ladvapi32 -lcrypt32 -lbcrypt
 Cflags: -I${includedir} 

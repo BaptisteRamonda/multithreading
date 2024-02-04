@@ -14,8 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//Enable/Disable color output during build.
+CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/cpr-subbuild/CMakeFiles/pkgRedirects
@@ -24,7 +24,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Baptiste Ramonda/Documents/GitH
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/cpr-populate
 
 //No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Users/BAPTIS~1/ANACON~1/Scripts/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/mingw64/bin/mingw32-make.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -70,6 +70,8 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
+CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/bin/cmake.exe
 //Path to cpack program executable.
@@ -78,12 +80,10 @@ CMAKE_CPACK_COMMAND:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packag
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/bin/ctest.exe
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=C:/Users/Baptiste Ramonda/anaconda3/Lib/site-packages/cmake/data/bin/cmake-gui.exe
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Ninja
+CMAKE_GENERATOR:INTERNAL=MinGW Makefiles
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.

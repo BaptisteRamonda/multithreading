@@ -1,0 +1,84 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/_deps/eigen-src/doc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "unsupported_examples::@8ad24722ee09b34c8f10"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "unsupported_snippets::@6f0f84b1669dcb169a4b"
+		}
+	],
+	"id" : "doc-unsupported-prerequisites::@f662dea0b34b6d7983fa",
+	"name" : "doc-unsupported-prerequisites",
+	"paths" : 
+	{
+		"build" : "_deps/eigen-build/doc",
+		"source" : "build/_deps/eigen-src/doc"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/eigen-build/doc/CMakeFiles/doc-unsupported-prerequisites",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/_deps/eigen-build/doc/CMakeFiles/doc-unsupported-prerequisites.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

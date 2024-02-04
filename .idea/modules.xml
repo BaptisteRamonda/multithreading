@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Multithreading.iml" filepath="$PROJECT_DIR$/.idea/Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/QueueManager.py.iml" filepath="$PROJECT_DIR$/.idea/QueueManager.py.iml" />
     </modules>
   </component>
 </project>

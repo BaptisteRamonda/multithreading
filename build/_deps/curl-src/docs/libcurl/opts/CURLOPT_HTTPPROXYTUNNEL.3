@@ -5,7 +5,7 @@
 .\" *                            | (__| |_| |  _ <| |___
 .\" *                             \___|\___/|_| \_\_____|
 .\" *
-.\" * Copyright (C) 1998 - 2020, Daniel Stenberg, <daniel@haxx.se>, et al.
+.\" * Copyright (C) Daniel Stenberg, <daniel@haxx.se>, et al.
 .\" *
 .\" * This software is licensed as described in the file COPYING, which
 .\" * you should have received as part of this distribution. The terms
@@ -18,16 +18,20 @@
 .\" * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
 .\" * KIND, either express or implied.
 .\" *
+.\" * SPDX-License-Identifier: curl
+.\" *
 .\" **************************************************************************
 .\"
-.TH CURLOPT_HTTPPROXYTUNNEL 3 "November 04, 2020" "libcurl 7.80.0" "curl_easy_setopt options"
+.TH CURLOPT_HTTPPROXYTUNNEL 3 "September 26, 2023" "ibcurl 8.4.0" libcurl
 
 .SH NAME
 CURLOPT_HTTPPROXYTUNNEL \- tunnel through HTTP proxy
 .SH SYNOPSIS
+.nf
 #include <curl/curl.h>
 
 CURLcode curl_easy_setopt(CURL *handle, CURLOPT_HTTPPROXYTUNNEL, long tunnel);
+.fi
 .SH DESCRIPTION
 Set the \fBtunnel\fP parameter to 1L to make libcurl tunnel all operations
 through the HTTP proxy (set with \fICURLOPT_PROXY(3)\fP). There is a big
@@ -44,7 +48,7 @@ To suppress proxy CONNECT response headers from user callbacks use
 HTTP proxies can generally only speak HTTP (for obvious reasons), which makes
 libcurl convert non-HTTP requests to HTTP when using an HTTP proxy without
 this tunnel option set. For example, asking for an FTP URL and specifying an
-HTTP proxy will make libcurl send an FTP URL in an HTTP GET request to the
+HTTP proxy makes libcurl send an FTP URL in an HTTP GET request to the
 proxy. By instead tunneling through the proxy, you avoid that conversion (that
 rarely works through the proxy anyway).
 .SH DEFAULT
@@ -66,4 +70,6 @@ Always
 .SH RETURN VALUE
 Returns CURLE_OK
 .SH "SEE ALSO"
-.BR CURLOPT_PROXY "(3), " CURLOPT_PROXYTYPE "(3), " CURLOPT_PROXYPORT "(3), "
+.BR CURLOPT_PROXY (3),
+.BR CURLOPT_PROXYTYPE (3),
+.BR CURLOPT_PROXYPORT (3)

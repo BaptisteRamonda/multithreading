@@ -3,6 +3,7 @@
 <keywords>
 HTTP
 HTTP GET
+-z
 </keywords>
 </info>
 #
@@ -28,10 +29,10 @@ Content-Type: text/html
 <server>
 http
 </server>
- <name>
+<name>
 HTTP 304 response with "illegal" Content-Length: header
- </name>
- <command>
+</name>
+<command>
 http://%HOSTIP:%HTTPPORT/%TESTNUMBER -z "dec 12 12:00:00 1999 GMT"
 </command>
 </client>

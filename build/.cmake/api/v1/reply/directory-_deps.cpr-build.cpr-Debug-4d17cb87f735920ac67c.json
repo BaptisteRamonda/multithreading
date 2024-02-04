@@ -1,0 +1,58 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/cpr-src/cpr/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/cpr-build/cpr/libcpr.dll.a"
+			],
+			"targetId" : "cpr::@c4b08663df96993e8225",
+			"targetIndex" : 354,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"_deps/cpr-build/cpr/libcpr.dll"
+			],
+			"targetId" : "cpr::@c4b08663df96993e8225",
+			"targetIndex" : 354,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/cpr-build/cpr",
+		"source" : "build/_deps/cpr-src/cpr"
+	}
+}

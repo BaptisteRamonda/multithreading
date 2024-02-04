@@ -3,5 +3,6 @@
   <component name="Black">
     <option name="sdkName" value="multithreading" />
   </component>
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="ProjectRootManager" version="2" project-jdk-name="multithreading" project-jdk-type="Python SDK" />
 </project>

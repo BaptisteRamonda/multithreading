@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src/include/curl/curlver.h
+
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src/lib/libcurl.rc
+winver.h
+-
+../include/curl/curlver.h
+C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src/include/curl/curlver.h
+

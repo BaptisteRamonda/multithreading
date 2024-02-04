@@ -19,7 +19,7 @@ project(cpr-populate NONE)
 
 include(ExternalProject)
 ExternalProject_Add(cpr-populate
-                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "OFF" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libcpr/cpr/archive/refs/tags/1.10.4.tar.gz"
+                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "OFF" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/libcpr/cpr/archive/refs/tags/1.10.5.tar.gz"
                     SOURCE_DIR          "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/cpr-src"
                     BINARY_DIR          "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/cpr-build"
                     CONFIGURE_COMMAND   ""

@@ -22,16 +22,16 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(STATUS "verifying file...
-       file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz'")
+       file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz'")
 
-  file("SHA256" "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz" actual_value)
+  file("SHA256" "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz" actual_value)
 
-  if(NOT "${actual_value}" STREQUAL "a132bd93188b938771135ac7c1f3ac1d3ce507c1fcbef8c471397639214ae2ab")
+  if(NOT "${actual_value}" STREQUAL "16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(STATUS "SHA256 hash of
-    C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz
+    C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz
   does not match expected value
-    expected: 'a132bd93188b938771135ac7c1f3ac1d3ce507c1fcbef8c471397639214ae2ab'
+    expected: '16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d'
       actual: '${actual_value}'")
   else()
     set("${hash_is_good}" TRUE PARENT_SCOPE)
@@ -71,40 +71,40 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if("C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz" STREQUAL "")
+if("C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz" STREQUAL "")
   message(FATAL_ERROR "LOCAL can't be empty")
 endif()
 
-if("https://github.com/curl/curl/releases/download/curl-7_80_0/curl-7.80.0.tar.xz" STREQUAL "")
+if("https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.xz" STREQUAL "")
   message(FATAL_ERROR "REMOTE can't be empty")
 endif()
 
-if(EXISTS "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz")
+if(EXISTS "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(STATUS "File already exists and hash match (skip download):
-  file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz'
-  SHA256='a132bd93188b938771135ac7c1f3ac1d3ce507c1fcbef8c471397639214ae2ab'"
+  file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz'
+  SHA256='16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d'"
       )
       return()
     else()
       message(STATUS "File already exists but hash mismatch. Removing...")
-      file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz")
+      file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz")
     endif()
   else()
     message(STATUS "File already exists but no hash specified (use URL_HASH):
-  file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz'
+  file='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz")
+    file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(STATUS "Downloading...
-   dst='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz'
+   dst='C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -115,7 +115,7 @@ foreach(i RANGE ${retry_number})
   if(status_code IN_LIST download_retry_codes)
     sleep_before_download(${i})
   endif()
-  foreach(url https://github.com/curl/curl/releases/download/curl-7_80_0/curl-7.80.0.tar.xz)
+  foreach(url https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.xz)
     if(NOT url IN_LIST skip_url_list)
       message(STATUS "Using src='${url}'")
 
@@ -126,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz"
+        "${url}" "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -143,7 +143,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(STATUS "Hash mismatch, removing...")
-          file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-7.80.0.tar.xz")
+          file(REMOVE "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz")
         else()
           message(STATUS "Downloading... done")
           return()

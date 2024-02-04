@@ -19,7 +19,7 @@ project(curl-populate NONE)
 
 include(ExternalProject)
 ExternalProject_Add(curl-populate
-                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/curl/curl/releases/download/curl-7_80_0/curl-7.80.0.tar.xz" "URL_HASH" "SHA256=a132bd93188b938771135ac7c1f3ac1d3ce507c1fcbef8c471397639214ae2ab"
+                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.tar.xz" "URL_HASH" "SHA256=16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d"
                     SOURCE_DIR          "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-src"
                     BINARY_DIR          "C:/Users/Baptiste Ramonda/Documents/GitHub/multithreading/build/_deps/curl-build"
                     CONFIGURE_COMMAND   ""

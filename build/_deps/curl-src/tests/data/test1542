@@ -2,9 +2,10 @@
 <info>
 <keywords>
 HTTP
-connection re-use
+connection reuse
 persistent connection
 CURLOPT_MAXLIFETIME_CONN
+verbose logs
 </keywords>
 </info>
 
@@ -25,10 +26,10 @@ http
 <tool>
 lib%TESTNUMBER
 </tool>
- <name>
+<name>
 connection reuse with CURLOPT_MAXLIFETIME_CONN
- </name>
- <command>
+</name>
+<command>
 http://%HOSTIP:%HTTPPORT/%TESTNUMBER
 </command>
 </client>
@@ -53,11 +54,11 @@ Host: %HOSTIP:%HTTPPORT
 Accept: */*
 
 </protocol>
-<file name="log/stderr%TESTNUMBER" mode="text">
+<file name="%LOGDIR/stderr%TESTNUMBER" mode="text">
 == Info: Connection #0 to host %HOSTIP left intact
 == Info: Connection #0 to host %HOSTIP left intact
 == Info: Connection #0 to host %HOSTIP left intact
-== Info: Closing connection 0
+== Info: Closing connection
 == Info: Connection #1 to host %HOSTIP left intact
 </file>
 <stripfile>

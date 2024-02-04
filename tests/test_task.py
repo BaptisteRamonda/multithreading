@@ -1,5 +1,5 @@
 import unittest
-from classes.Task import Task
+from multithreading.Task import Task
 
 
 class TestTaskEquality(unittest.TestCase):
