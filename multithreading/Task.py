@@ -15,7 +15,7 @@ class Task:
         # Generate the input of the problem: a random matrix 'a' of size (self.size, self.size) and
         # a random vector 'b' of size self.size
         self.a = np.random.rand(self.size, self.size)
-        self.b = np.random.rand(self.size, self.size)
+        self.b = np.random.rand(self.size)
 
         # Prepare room for the results: initialize an array 'x' of zeros with the same size as 'b'
         self.x = np.zeros(self.size)
@@ -34,19 +34,18 @@ class Task:
         self.time = time.perf_counter() - start
 
     def to_json(self) -> str:
-        """
-        Convert the Task object to a JSON-formatted string.
-        """
-        task_dict = {
-            'identifier': self.identifier,
-            'size': self.size,
-            # Convert NumPy array to a nested list
-            'a': self.a.tolist(),
-            'b': self.b.tolist(),
-            'x': self.x.tolist(),
-            'time': self.time
+        # serialize args of the current instantiation
+        data = {
+            "identifier": self.identifier,
+            "size": self.size,
+            "A": self.a.tolist(),
+            "X": self.x.tolist(),
+            "b": self.b.tolist(),
+            "execution_time": self.time,
         }
-        return json.dumps(task_dict, indent=2)
+
+        # convert the dictionary in json
+        return json.dumps(data)
 
     @classmethod
     def from_json(cls, text: str) -> "Task":

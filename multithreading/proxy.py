@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from QueueManager import QueueClient
 
