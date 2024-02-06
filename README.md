@@ -69,11 +69,7 @@ Open multiple terminals for different components:
 
 ## Unit tests
 
-In the test folder you will find unit tests testing the different classes of the project. To run these tests, execute the command below, replacing with the name of the corresponding test :
-
-```bash
- python .\tests\test_name.py
-```
+In the test folder you will find unit tests testing the different classes of the project. To run these tests, open an IDE like PyCharm and execute these tests directly in it by clicking on the run button.
 
 ## License
 
