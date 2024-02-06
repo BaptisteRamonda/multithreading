@@ -1,3 +1,0 @@
-"C:\Users\Baptiste Ramonda\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe" -E rm -f CMakeFiles\sblat1.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\sblat1.dir/objects.a @CMakeFiles\sblat1.dir\objects1.rsp
-C:\msys64\mingw64\bin\gfortran.exe -g -Wl,--whole-archive CMakeFiles\sblat1.dir/objects.a -Wl,--no-whole-archive -o sblat1.exe -Wl,--out-implib,libsblat1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sblat1.dir\linkLibs.rsp

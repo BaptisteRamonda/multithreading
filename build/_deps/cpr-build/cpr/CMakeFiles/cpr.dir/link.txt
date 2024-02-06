@@ -1,3 +1,0 @@
-"C:\Users\Baptiste Ramonda\anaconda3\Lib\site-packages\cmake\data\bin\cmake.exe" -E rm -f CMakeFiles\cpr.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\cpr.dir/objects.a @CMakeFiles\cpr.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe  -Wall -Wextra -Wpedantic -Werror -g -shared -o libcpr.dll -Wl,--out-implib,libcpr.dll.a -Wl,--major-image-version,1,--minor-image-version,10 -Wl,--whole-archive CMakeFiles\cpr.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\cpr.dir\linkLibs.rsp
