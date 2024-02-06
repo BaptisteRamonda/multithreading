@@ -18,32 +18,54 @@ Source : Guilhem Saurel, LAAS-CNRS
 
 ## Installation
 
-Before trying to launch the project, make sure you have installed the appropriate dependencies (run the lines below to install them) :
+1. Clone the repository:
 
-```bash
- pip install numpy
-```
+    ```bash
+    git clone https://github.com/BaptisteRamonda/multithreading.git
+    cd multithreading
+    ```
 
-```bash
- pip install multiprocessing
-```
+2. Generate build files using CMake:
 
+    ```bash
+    cmake -B build -S .
+    ```
+
+3. Build the project:
+
+    ```bash
+    cmake --build build
+    ```
 
 ## Usage
 
-To run the project correctly, execute the three commands below in three different terminals (in that order) :
+Open multiple terminals for different components:
 
-```bash
- python .\classes\QueueManager.py
-```
+1. In a second terminal, run:
 
-```bash
- python .\classes\Boss.py
-```
+    ```bash
+    python ./multithreading/QueueManager.py
+    ```
 
-```bash
- python .\classes\Minion.py
-```
+2. In a third terminal, run:
+
+    ```bash
+    python ./multithreading/Proxy.py
+    ```
+
+3. In a fourth terminal, run:
+
+    ```bash
+    python ./multithreading/Boss.py
+    ```
+
+    Then provide the number of tasks to be executed by the Boss.
+
+4. In the first terminal, run:
+
+    ```bash
+    ./build/low_level
+    ```
 
 ## Unit tests
 
@@ -53,3 +75,6 @@ In the test folder you will find unit tests testing the different classes of the
  python .\tests\test_name.py
 ```
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
