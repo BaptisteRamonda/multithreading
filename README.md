@@ -52,7 +52,7 @@ Open multiple terminals for different components:
 2. In a third terminal, run:
 
     ```bash
-    python ./multithreading/Proxy.py
+    python ./multithreading/proxy.py
     ```
 
 3. In a fourth terminal, run:
