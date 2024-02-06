@@ -75,4 +75,4 @@ In the test folder you will find unit tests testing the different classes of the
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://pitt.libguides.com/openlicensing/MIT)https://pitt.libguides.com/openlicensing/MIT) file for details.
