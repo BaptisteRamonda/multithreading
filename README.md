@@ -69,7 +69,7 @@ Open multiple terminals for different components:
 
 ## Unit tests
 
-In the test folder you will find unit tests testing the different classes of the project. To run these tests, open an IDE like PyCharm and execute these tests directly in it by clicking on the run button.
+In the test folder you will find unit tests testing the different classes of the project. To run these tests, open an IDE like PyCharm and execute these tests directly in it..
 
 ## License
 
